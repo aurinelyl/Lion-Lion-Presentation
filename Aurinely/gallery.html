@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body> 
+
+<div id="topdiv">
+<img id="logo" src="http://i.imgur.com/lYfh0Pa.png">
+<div id="navigation"> 
+            <a href="index.html">WELCOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="about.html">ABOUT</a>
+            <a href="press.html">PRESS</a>
+            <a href="reservations.html">RESERVATIONS</a>
+            <a href="gallery.html">GALLERY</a>
+            </div>
+</div>
+<a class="back-button" onclick="plusDivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusDivs(+1)">&#10095;</a>
+
+<div id="slider">
+
+
+
+<img class="mySlides" src="http://i.imgur.com/Oz516ue.jpg">
+
+<img class="mySlides" src="http://i.imgur.com/xoPjPv4.jpg">
+
+<img class="mySlides" src="http://i.imgur.com/Mgltih1.jpg">
+
+<img class="mySlides" src="http://i.imgur.com/NdFguja.jpg">
+
+<img class="mySlides" src="http://i.imgur.com/04Q5HNo.jpg">
+
+<img class="mySlides" src="http://i.imgur.com/DE1Y5R1.jpg">
+
+<img class="mySlides" src="http://i.imgur.com/TTGm1it.jpg">
+
+<img class="mySlides" src="http://imgur.com/NgdDDY4.jpg">
+
+
+</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex)
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+function showDivs (n){
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex=1}
+    if (n < 1) {slideIndex=x.length}
+        for ( i = 0 ; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display="block";
+}
+</script>
+
+<div id="bottomdiv">
+<div id="wrapper">
+<div id="left">
+<p>LOCATION<p><br>
+<P>LION LION</P><br>
+<p>332 E 116th St.</p><br>
+<p>B/T FIRST AND SECOND AVENUE</p><br>
+<p>EAST HARLEM</p><br>
+</div>
+
+<div id="right">
+<p>HOURS<p><br>
+<P>MONDAY - SUNDAY</P><br>
+<p>5PM - 2AM</p><br>
+</div>
+
+<div id="middle">
+<P><a href="https://www.facebook.com/lionlionbareastharlem/">
+FACEBOOK:/lionlioneastharlem</P><br></a>
+<p><a href="https://www.instagram.com/lionlionbar/">INSTAGRAM: @lionlionbar</p><br></a>
+</div>
+</div>
+</div>
+</body>
+</html>
